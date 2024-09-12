@@ -7,6 +7,9 @@ WORKDIR /app
 # Copy the package.json and package-lock.json files to the working directory
 COPY package*.json ./
 
+# mirror of china taobao
+npm config set registry https://registry.npmmirror.com
+
 # Install dependencies
 RUN npm install
 
