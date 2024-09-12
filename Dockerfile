@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # mirror of china taobao
-npm config set registry https://registry.npmmirror.com
+RUN npm config set registry https://registry.npmmirror.com
 
 # Install dependencies
 RUN npm install
