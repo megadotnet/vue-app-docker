@@ -15,6 +15,11 @@ npm run serve
 npm run build
 ```
 
+### UnitTests
+```
+npm run test:unit
+```
+
 ### Lints and fixes files
 ```
 npm run lint
@@ -22,6 +27,8 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+[unit test]（https://github.com/nidhi-canopas/vue3-component-test-example）
 
 ### Build docker image:
 ```
