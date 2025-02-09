@@ -34,7 +34,17 @@
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
+    msg: {
+      type: String,
+      default: 'Hello World', // 提供默认值
+      required: true // 确保父组件必须传递此属性
+    }
+  },
+  computed: {
+    safeMsg() {
+      // 处理 msg 为 null 或 undefined 的情况
+      return this.msg || 'Default Message';
+    }
   }
 }
 </script>
